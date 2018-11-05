@@ -1,6 +1,8 @@
-chrome.webRequest.onBeforeRequest.addListener(
-        function(details) {
-          return {cancel: details.url.indexOf("://www.evil.com/") != -1};
-        },
-        {urls: ["<all_urls>"]},
-        ["blocking"]);
+chrome.webRequest.onCompleted.addListener(
+	handleRequest,
+	{urls: ["<all_urls>"], types:['image']},
+	["responseHeaders"]
+)
+function handleRequest(details){
+	replaceAllImages();
+}

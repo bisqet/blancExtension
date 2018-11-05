@@ -1,0 +1,28 @@
+{
+  "name": "Blanc Images",
+  "description" : "Displays all webpage images as blanc(with ability to set your own image) with ability to return image to initial state in one click.",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_icon": "/images/blanc_image16.png",
+    "default_title": "Choose your own Img!",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "/images/blanc_image16.png",
+    "32": "/images/blanc_image32.png",
+    "48": "/images/blanc_image48.png",
+    "128": "/images/blanc_image128.png"
+  },
+  "permissions": [
+    "<all_urls>",
+    "storage"
+  ],
+  "content_scripts" : [{
+      "matches" : [ "<all_urls>"],
+      "run_at":"document_start",
+      "all_frames": true,
+      "js" : ["inject.js"]
+  }]
+}
+

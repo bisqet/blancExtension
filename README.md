@@ -1,6 +1,8 @@
 # blancExtension
-Extension which will replace all images in the web to blank not breaking site flow
+Extension which will replace all images in the web to blanc not breaking site flow
 
+
+#THIS NOT WORK:
 https://developer.chrome.com/extensions/samples#search:image<br>
 
 ##tips:
