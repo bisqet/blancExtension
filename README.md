@@ -1,5 +1,5 @@
-# blancExtension
-Extension which will display all webpage images as blanc(or you can set your own image) with ability to return image to initial state in one click.
+# blanchExtension
+Extension which will display all webpage images as blanch(or you can set your own image) with ability to return image to initial state in one click.
 Also not break site flow.
       
 ### This is a hack
