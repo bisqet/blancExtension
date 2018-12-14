@@ -1,29 +1,18 @@
 # blancExtension
-Extension which will replace all images in the web to blanc not breaking site flow
-
-
-#THIS NOT WORK:
-https://developer.chrome.com/extensions/samples#search:image<br>
-
-##tips:
-https://developer.chrome.com/extensions/webRequest
-
-ResourceType: image
-OnCompletedOptions: responseHeaders
-
-`var callback = function(details) {...};
-      var filter = {...};
-      var opt_extraInfoSpec = [...];`
+Extension which will display all webpage images as blanc(or you can set your own image) with ability to return image to initial state in one click.
+Also not break site flow.
       
-Here's an example of listening for the onBeforeRequest event:
-
-      `chrome.webRequest.onBeforeRequest.addListener(
-        callback, filter, opt_extraInfoSpec);`
-        
-        
-###HOW I SEE IT:
-`chrome.webRequest.onCompleted.addListener(handleRequest)
+###This is a hack
+ye, Chrome team about five years can't do API to handle web requests from extensions. So this extension may not work with specific case.
+#### How I see it right way:
+```javascript
+chrome.webRequest.onCompleted.addListener(handleRequest)
 function handleRequest(details){
   if(details.ResourceType!=='image')return;
-  console.dir(details.HttpHeaders)
-}`
+  blockRequest();
+}
+```
+#### tips:
+https://developer.chrome.com/extensions/webRequest
+## Updates
+Ye, this extension needs to increase count of situations with images which it can handle. I know, just it not in my interests to continue work on it because it was part of freelance job. You can write me or in the [issues](https://github.com/bisqet/blancExtension/issues) to get feedback or to have [talk](https://github.com/bisqet) about your case in which you need this extension
