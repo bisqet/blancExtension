@@ -43,15 +43,26 @@ button {
     margin-bottom: 10px;
     border-radius: 4px;
     transition: all .2s ease;
+    cursor: pointer;
 }
-
+#turn.off {
+    background: #d69314;
+}
+#turn.on {
+    background: #149f5b;
+}
+#turnApp.off {
+    background: #f1592b;
+}
+#turnApp.on {
+    background: #149f5b;
+}
 #new {
     background: #53dc3c;
 }
 
 #default {
     background-color: #3e44e0;
-    cursor: pointer;
 }
 
 #default:hover {
