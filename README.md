@@ -2,7 +2,7 @@
 Extension which will display all webpage images as blanc(or you can set your own image) with ability to return image to initial state in one click.
 Also not break site flow.
       
-###This is a hack
+### This is a hack
 ye, Chrome team about five years can't do API to handle web requests from extensions. So this extension may not work with specific case.
 #### How I see it right way:
 ```javascript
