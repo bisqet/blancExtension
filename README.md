@@ -1,7 +1,7 @@
 # blanchExtension
-Extension which will display all webpage images as blanch(or you can set your own image) with ability to return image to initial state in one click.
-Also not break site flow.
-      
+Extension which will display all webpage images as blanch(or you can set your own image) with ability to return to initial site image in one click. Also not break site flow.
+## How to use
+All is pretty simple but to return initial site image you can click on it. Also you can disable extension using disable button to return all inital site images on all tabs
 ### This is a hack
 ye, Chrome team about five years can't do API to handle web requests from extensions. So this extension may not work with specific case.
 #### How I see it right way:
