@@ -15,4 +15,4 @@ function handleRequest(details){
 #### tips:
 https://developer.chrome.com/extensions/webRequest
 ## Updates
-Ye, this extension needs to increase count of situations with images which it can handle. I know, just it not in my interests to continue work on it because it was part of freelance job. You can write me or in the [issues](https://github.com/bisqet/blancExtension/issues) to get feedback or to have [talk](https://github.com/bisqet) about your case in which you need this extension
+Ye, this extension needs to increase count of situations with images which it can handle. I know, just it not in my interests to continue work on it. You can write me or in the [issues](https://github.com/bisqet/blancExtension/issues) to get feedback or to have [talk](https://github.com/bisqet) about your case in which you need this extension
